@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+//import {connect} from 'react-redux';
 
 class Info extends Component {
     render() {
@@ -12,9 +12,5 @@ class Info extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-        info: state
-    }
-}
-export default connect(mapStateToProps)(Info)
+
+export default Info;
