@@ -1,0 +1,35 @@
+{
+  "result": [
+    {
+      "project_name": "first project",
+      "project_description": "description of first project",
+      "user_email": "first@gmail.com",
+      "user_nickname": "first",
+      "user_name": "Semen",
+      "user_surname": "Retushko",
+      "user_reputation": 10000,
+      "user_role": "user"
+    },
+    {
+      "project_name": "second project",
+      "project_description": "description of second project",
+      "user_email": "second@gmail.com",
+      "user_nickname": "second",
+      "user_name": "Stepan",
+      "user_surname": "Selenko",
+      "user_reputation": 10000,
+      "user_role": "user"
+    },
+    {
+      "project_name": "third project",
+      "project_description": "description of third project",
+      "user_email": "third@gmail.com",
+      "user_nickname": "third",
+      "user_name": "Dmitriy",
+      "user_surname": "Kostiev",
+      "user_reputation": 10000,
+      "user_role": "user"
+    }
+  ],
+  "status": 200
+}
