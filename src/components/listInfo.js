@@ -19,8 +19,12 @@ class AllInfo extends Component {
         console.log(this.state.projects)
         return (
             <div className="info-block">
-                <p>{this.state.projects.name}</p>
-                {this.state.projects.map(project => <p key={project.project_name}>{project.project_name}</p>)}
+                {this.state.projects.map( project    =>
+                    <div key={project.project_name}>
+                        <h2>{project.project_name}</h2>
+                        <p>{project.project_description}</p>
+                    </div>)}
+                {/*this.state.projects.map(project => <p key={project.project_name}>{project.project_description}</p>)*/}
             </div>
         )
     }
