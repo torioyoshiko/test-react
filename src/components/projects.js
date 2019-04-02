@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
 //import {connect} from 'react-redux'
 import Info from "./loadInfo";
+import Project from "./project"
 
 
-class AllInfo extends Component {
+class Projects extends Component {
 
     state = {
         projects: []
@@ -20,15 +21,11 @@ class AllInfo extends Component {
         return (
             <div className="info-block">
                 {this.state.projects.map( project    =>
-                    <div key={project.project_name}>
-                        <h2>{project.project_name}</h2>
-                        <p>{project.project_description}</p>
-                    </div>)}
-                {/*this.state.projects.map(project => <p key={project.project_name}>{project.project_description}</p>)*/}
+                    <Project project={project} key={project.project_name}/>)}
             </div>
         )
     }
 }
 
-export default AllInfo;
+export default Projects;
 
