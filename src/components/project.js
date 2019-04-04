@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import "./css/project.css"
 
 class Project extends Component {
     render(){

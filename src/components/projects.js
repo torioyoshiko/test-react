@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-//import {connect} from 'react-redux'
-import Info from "./loadInfo";
 import Project from "./project"
+import "./css/projects.css"
 
 
 class Projects extends Component {

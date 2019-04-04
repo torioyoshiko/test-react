@@ -1,0 +1,12 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #EDF1F2;
+}
+
+.create-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}

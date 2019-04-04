@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Projects from "./components/projects";
 import './App.css';
+import AppRouter from "./router/router"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Projects/>
+        <AppRouter/>
       </div>
     );
   }
