@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import "./css/createProject.css"
-import axios from "axios"
+//import axios from "axios"
+
 
 class CreateProject extends Component {
 
@@ -29,7 +30,14 @@ class CreateProject extends Component {
 
     handleSubmit(event) {
         const {userEmail, userPassword, value, description} = this.state;
-        axios.get('http://149.56.45.104:8000/api/createProject?userEmail=first@gmail.com&userPassword=qwerty&projectName=firstProject&projectDescription=description of first project', {userEmail, userPassword, value, description})
+        const url = 'http://149.56.45.104:8000/api/createProject?userEmail=first@gmail.com&userPassword=qwerty&projectName=firstProject&projectDescription=description';
+        const data = {
+
+        }
+
+        fetch(url, {userEmail, userPassword, value, description})
+            .then(response => response.json())
+            .then(json => console.log(json))
             .catch(function (error) {
                 if (error.response) {
                     console.log(error.response.data);
@@ -39,7 +47,19 @@ class CreateProject extends Component {
                 }
                 console.log(error.config);
             });
-        console.log("form was submitted");
+
+        {/*axios.get('http://149.56.45.104:8000/api/createProject?userEmail=first@gmail.com&userPassword=qwerty&projectName=firstProject&projectDescription=description',[
+            {userEmail, userPassword, value, description}])
+            .catch(function (error) {
+                if (error.response) {
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                } else {
+                    console.log('Error', error.message);
+                }
+                console.log(error.config);
+            });
+        console.log("form was submitted");*/}
     }
 
     render() {
