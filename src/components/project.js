@@ -7,7 +7,7 @@ class Project extends Component {
         const project = this.props.project
         console.log(project)
         return (
-            <div>
+            <div className="project-info">
                 <h2>{project.project_name}</h2>
                 <p>{project.project_description}</p>
             </div>
